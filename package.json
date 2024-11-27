@@ -1,0 +1,12 @@
+{
+    "name": "fv-solver",
+    "type": "module",
+    "engines": {
+        "node": "v22.11.0"
+    },
+    "dependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/generator": "^7.26.2",
+        "puppeteer": "^23.9.0"
+    }
+}
