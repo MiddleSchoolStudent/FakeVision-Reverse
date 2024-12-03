@@ -17,7 +17,7 @@ const mainJsResponse = await waitMainJsPromise;
 const mainJsContent = await mainJsResponse.text();
 await page.close();
 
-console.log("main.js loaded");
+console.log(`main.js loaded with url: ${mainJsResponse.url()}`);
 const ast = parse(mainJsContent);
 
 // Use traverse to find function calls with only two arguments, each of which is a number, or an expression of a number, such as 1 + 2, or 1 * 2, 1 / 2, or -1.
