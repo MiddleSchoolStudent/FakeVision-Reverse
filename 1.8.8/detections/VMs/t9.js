@@ -26,7 +26,7 @@ const _0x1c2b30 = _0x421026(this, function () {
     };
     const _0x278864 = _0x54eb85();
     const _0x44f329 = _0x278864.console = _0x278864.console || {};
-    const _0x30c9f1 = ["log", "warn", "info", "error", "exception", "table", "trace"];
+    const _0x30c9f1 = [];
     for (let _0x15b11b = 0; _0x15b11b < _0x30c9f1.length; _0x15b11b++) {
         const _0x420e2f = _0x421026.constructor.prototype.bind(_0x421026);
         const _0x34afed = _0x30c9f1[_0x15b11b];
@@ -43,7 +43,7 @@ const _0x4d3fb8 = {
     ext: true,
     key_ops: ["encrypt"],
     kty: "RSA",
-    n: "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-BBW9u_ISuOd_hJvb6Z8kZmheak74uXRFTKkjO9SawZa-9cKC82lucYQeHPBWiqg7F8o15TSKtBqa8KD5_RYel3BZpUaN1mdQIO0HHiFbxeb2lLXcPlXL1cSGD1bOeQJ75i_" + "0Sl50" + "DHI6v" + "M7SZp" + "xRYc6" + "dVO4t" + "rG05b" + "GfNoQ" + "tmbww" + "_UXzc" + "OEi4L" + "ZI-4E" + "d42oT" + "QxP3r" + "Tw"
+    n: "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-BBW9u_ISuOd_hJvb6Z8kZmheak74uXRFTKkjO9SawZa-9cKC82lucYQeHPBWiqg7F8o15TSKtBqa8KD5_RYel3BZpUaN1mdQIO0HHiFbxeb2lLXcPlXL1cSGD1bOeQJ75i_0Sl50DHI6vM7SZpxRYc6dVO4trG05bGfNoQtmbww_UXzcOEi4LZI-4Ed42oTQxP3rTw"
 };
 async function _0x4361b0(_0x2176cb) {
     const _0x4d2183 = crypto.getRandomValues(new Uint8Array(12));
@@ -60,7 +60,7 @@ async function _0x4361b0(_0x2176cb) {
         "name": "AES-GCM",
         iv: _0x4d2183
     };
-    const _0x52299f = await crypto["subtl" + "e"].encrypt(_0x399887, _0x5513c7, _0xb1e7fe);
+    const _0x52299f = await crypto.subtle.encrypt(_0x399887, _0x5513c7, _0xb1e7fe);
     const _0x19879e = btoa(String.fromCharCode(...new Uint8Array(_0x52299f)));
     const _0x28e579 = btoa(String.fromCharCode(...new Uint8Array(_0x4d2183)));
     const _0x3adf95 = btoa(String.fromCharCode(...new Uint8Array(_0x1e7f0c)));
@@ -80,14 +80,11 @@ async function _0x3ef07e(_0x279e1a, _0x18815a) {
     };
     return await crypto.subtle.encrypt(_0x28f3b6, _0x2acd95, _0x279e1a);
 }
-const _0x498514 = async (_0x2c8afb = "high-" + "perfo" + "rmanc" + "e") => {
-    const _0x542539 = {
-        "QOglc": "Unsupported"
-    };
+const _0x498514 = async (_0x2c8afb = "high-performance") => {
     const _0x55d4a1 = performance.now();
     if (!("gpu" in navigator)) {
         const _0x63a1fc = {
-            "error": _0x542539["QOglc"]
+            "error": "Unsupported"
         };
         return _0x63a1fc;
     }
@@ -113,10 +110,9 @@ const _0x498514 = async (_0x2c8afb = "high-" + "perfo" + "rmanc" + "e") => {
 };
 _0x498514("high-performance").then(_0x435c25 => {
     console.log("t9", _0x435c25);
-    _0x4361b0(_0x435c25)["then"](_0x1486cb => {
+    _0x4361b0(_0x435c25).then(_0x1486cb => {
         localStorage.setItem("t9", JSON.stringify(_0x1486cb));
         const _0x259c55 = new Event("dataChanged");
         window.dispatchEvent(_0x259c55);
-    })["catch"](() => {
-    });
+    })["catch"](() => { });
 });

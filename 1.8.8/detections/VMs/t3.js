@@ -6,13 +6,13 @@ const _0x40fc4e = {
     ext: true,
     key_ops: ["encrypt"],
     kty: "RSA",
-    n: "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-BBW9u_" + "ISuOd" + "_hJvb" + "6Z8kZ" + "mheak" + "74uXR" + "FTKkj" + "O9Saw" + "Za-9c" + "KC82l" + "ucYQe" + "HPBWi" + "qg7F8" + "o15TS" + "KtBqa" + "8KD5_" + "RYel3" + "BZpUa" + "N1mdQ" + "IO0HH" + "iFbxe" + "b2lLX" + "cPlXL" + "1cSGD" + "1bOeQ" + "J75i_" + "0Sl50" + "DHI6v" + "M7SZp" + "xRYc6" + "dVO4t" + "rG05b" + "GfNoQ" + "tmbww" + "_UXzc" + "OEi4L" + "ZI-4E" + "d42oT" + "QxP3r" + "Tw"
+    n: "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-BBW9u_ISuOd_hJvb6Z8kZmheak74uXRFTKkjO9SawZa-9cKC82lucYQeHPBWiqg7F8o15TSKtBqa8KD5_RYel3BZpUaN1mdQIO0HHiFbxeb2lLXcPlXL1cSGD1bOeQJ75i_0Sl50DHI6vM7SZpxRYc6dVO4trG05bGfNoQtmbww_UXzcOEi4LZI-4Ed42oTQxP3rTw"
 };
 async function _0x11dcd4(_0x11a447) {
     const _0x3f8ee7 = crypto.getRandomValues(new Uint8Array(12));
     const _0x2594c9 = {
         name: "AES-GCM",
-        ["lengt" + "h"]: 0x100
+        length: 0x100
     };
     const _0x531e04 = await crypto.subtle.generateKey(_0x2594c9, true, ["encrypt", "decrypt"]);
     const _0x1e0404 = await crypto.subtle.exportKey("raw", _0x531e04);
@@ -46,13 +46,6 @@ async function _0xfedd67(_0x1ba8b0, _0x390320) {
 const _0x4eb91b = document.createElement("video");
 _0x4eb91b.id = "videoElement";
 const _0x337290 = {};
-function _0x11f000() {
-    const _0x361664 = ["AEP-2", "toStr", "error", "2721006myKNAx", "name", "t9dgB", "ISuOd", "2825gpJioq", "reque", "N1mdQ", "lengt", "2342637OUosJp", "gener", "9474ELexJB", "IO0HH", "raw", "n (fu", "bind", "b2lLX", "5878523XzdmIQ", "com.w", ")+)+)", "2400488kMvdLD", "nstru", "apply", "192XADEca", "tion", "fromC", "1127172aWNqZU", "initD", "log", "ing", "1552906IBEIpN", "hRoWV", "CvXhz"];
-    _0x11f000 = function () {
-        return _0x361664;
-    };
-    return _0x11f000();
-}
 _0x337290.contentType = "video/mp4; codecs=\"avc1.42E01E\"";
 _0x337290.robustness = "SW_SECURE_CRYPTO";
 const _0x20dc5b = {
@@ -61,20 +54,6 @@ const _0x20dc5b = {
 };
 const _0x12ef8c = [_0x20dc5b];
 function _0x36dc04() {
-    const _0x2e5b5d = function () {
-        let _0x552ea5 = true;
-        return function (_0x55618c, _0x2b0e57) {
-            const _0x33bffc = _0x552ea5 ? function () {
-                if (_0x2b0e57) {
-                    const _0x46930a = _0x2b0e57.apply(_0x55618c, arguments);
-                    _0x2b0e57 = null;
-                    return _0x46930a;
-                }
-            } : function () { };
-            _0x552ea5 = false;
-            return _0x33bffc;
-        };
-    }();
     const _0x212776 = function () {
         let _0x379f40 = true;
         return function (_0x2a315a, _0x5623f7) {
@@ -112,7 +91,6 @@ function _0x36dc04() {
         }
     });
     _0x59eb9f();
-    const _0xce76c3 = performance.now();
     if (!navigator.requestMediaKeySystemAccess) {
         console.log("Widevine: ", false);
         return;
@@ -127,16 +105,14 @@ function _0x36dc04() {
             localStorage.setItem("t3", JSON.stringify(_0x52e8e9));
             const _0x2a704d = new Event("dataChanged");
             window.dispatchEvent(_0x2a704d);
-        })["catch"](() => {
-        });
+        })["catch"](() => { });
     })["catch"](() => {
         console.log("t3", false);
         _0x11dcd4(false).then(_0x2f4015 => {
             localStorage.setItem("t3", JSON.stringify(_0x2f4015));
             const _0x5c4a8e = new Event("dataChanged");
             window.dispatchEvent(_0x5c4a8e);
-        })["catch"](() => {
-        });
+        })["catch"](() => { });
     });
 }
 _0x36dc04();

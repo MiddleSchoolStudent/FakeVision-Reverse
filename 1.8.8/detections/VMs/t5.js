@@ -1,12 +1,12 @@
 // @ts-check
 
 const _0x23fb82 = {
-    alg: "RSA-O" + "AEP-2" + "56",
+    alg: "RSA-OAEP-256",
     e: "AQAB",
     ext: true,
     key_ops: ["encrypt"],
     "kty": "RSA",
-    n: "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-B" + "BW9u_" + "ISuOd" + "_hJvb" + "6Z8kZ" + "mheak" + "74uXR" + "FTKkj" + "O9Saw" + "Za-9c" + "KC82l" + "ucYQe" + "HPBWi" + "qg7F8" + "o15TS" + "KtBqa" + "8KD5_" + "RYel3" + "BZpUa" + "N1mdQ" + "IO0HH" + "iFbxe" + "b2lLX" + "cPlXL" + "1cSGD" + "1bOeQ" + "J75i_" + "0Sl50" + "DHI6v" + "M7SZp" + "xRYc6" + "dVO4t" + "rG05b" + "GfNoQ" + "tmbww" + "_UXzc" + "OEi4L" + "ZI-4E" + "d42oT" + "QxP3r" + "Tw"
+    n: "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-BBW9u_ISuOd_hJvb6Z8kZmheak74uXRFTKkjO9SawZa-9cKC82lucYQeHPBWiqg7F8o15TSKtBqa8KD5_RYel3BZpUaN1mdQIO0HHiFbxeb2lLXcPlXL1cSGD1bOeQJ75i_0Sl50DHI6vM7SZpxRYc6dVO4trG05bGfNoQtmbww_UXzcOEi4LZI-4Ed42oTQxP3rTw"
 };
 async function _0x3439ff(_0x2140f4) {
     const _0x267be7 = crypto.getRandomValues(new Uint8Array(12));
@@ -43,27 +43,12 @@ async function _0x4338ea(_0x5c7c79, _0x9fade9) {
     };
     return await crypto.subtle.encrypt(_0x178d56, _0x2da928, _0x5c7c79);
 }
-
-const _0x3f82fd = '\n\thei' + "ght: " + "100vh" + ";\n\twi" + "dth: " + "100vw" + ";\n\tpo" + "sitio" + "n: fi" + "xed;\n" + "\tleft" + ":-100" + "00px;" + "\n\tvis" + "ibili" + "ty: h" + "idden" + ";\n";
 const _0x3a75ab = new DocumentFragment();
 const _0x72c7d4 = document.createElement("div");
 _0x3a75ab.appendChild(_0x72c7d4);
-_0x72c7d4.innerHTML = "<div style=\"" + _0x3f82fd + "\"><iframe></iframe></div>";
+_0x72c7d4.innerHTML = "<div style=\"\n\theight: 100vh;\n\twidth: 100vw;\n\tposition: fixed;\n\tleft:-10000px;\n\tvisibility: hidden;\n\"><iframe></iframe></div>";
 document.body.appendChild(_0x3a75ab);
-
 async function _0x2d6adf() {
-    const _0x1b4072 = {
-        "kPifP": "(((.+)+)+)+$",
-        "isHlE": "warn",
-        "GXewa": "ButtonBorder",
-        "BoDiQ": "Highl" + "ightT" + "ext",
-        "pDJEI": function (_0x5ba35b, _0x5845bd) {
-            return _0x5ba35b(_0x5845bd);
-        },
-        "wTkdD": function (_0x56f644, _0x23aaf3) {
-            return _0x56f644(_0x23aaf3);
-        }
-    };
     const _0x177070 = function () {
         let _0x2d9592 = true;
         return function (_0x430f20, _0x11208f) {
@@ -90,7 +75,7 @@ async function _0x2d6adf() {
         };
         const _0x1d7f7f = _0x2e7e26();
         const _0x141b34 = _0x1d7f7f.console = _0x1d7f7f.console || {};
-        const _0x1b3c98 = ["log", "warn", "info", "error", "excep" + "tion", "table", "trace"];
+        const _0x1b3c98 = [];
         for (let _0x45291d = 0; _0x45291d < _0x1b3c98.length; _0x45291d++) {
             const _0x4c2aea = _0x177070.constructor.prototype.bind(_0x177070);
             const _0x1b6811 = _0x1b3c98[_0x45291d];
@@ -138,11 +123,11 @@ async function _0x2d6adf() {
                 const _0x4a81ef = _0x45f51e && _0x694d64 == _0x694d64.toUpperCase();
                 _0x51de4b = _0x1650b0 ? _0x51de4b.slice(1) : _0x4a81ef ? _0x51de4b.charAt(0).toLowerCase() + _0x51de4b.slice(1) : _0x51de4b;
                 if (_0x5ba97a) {
-                    const _0x2f98bd = _0x51de4b.split("-").map((_0x4c5271, _0x2733b1) => _0x2733b1 == 0 ? _0x4c5271 : _0x4c5271.charAt(0)["toUpp" + "erCas" + "e"]() + _0x4c5271.slice(1)).join('');
+                    const _0x2f98bd = _0x51de4b.split("-").map((_0x4c5271, _0x2733b1) => _0x2733b1 == 0 ? _0x4c5271 : _0x4c5271.charAt(0).toUpperCase() + _0x4c5271.slice(1)).join('');
                     if (_0x2f98bd in _0xb1ef33) {
                         _0x4af6c6[_0x2f98bd] = true;
-                    } else if (_0x2f98bd.charAt(0)["toUpp" + "erCas" + "e"]() + _0x2f98bd.slice(1) in _0xb1ef33) {
-                        _0x4af6c6[_0x2f98bd.charAt(0)["toUpp" + "erCas" + "e"]() + _0x2f98bd.slice(1)] = true;
+                    } else if (_0x2f98bd.charAt(0).toUpperCase() + _0x2f98bd.slice(1) in _0xb1ef33) {
+                        _0x4af6c6[_0x2f98bd.charAt(0).toUpperCase() + _0x2f98bd.slice(1)] = true;
                     }
                 } else {
                     if (_0x45f51e) {
@@ -168,8 +153,8 @@ async function _0x2d6adf() {
     };
     const _0x4555d3 = _0x4d3a97 => {
         try {
-            const _0x2fa5d3 = ["Accen" + "tColo" + "r", "ActiveBorder", "Activ" + "eCapt" + "ion", "ActiveText", "AppWorkspace", "Background", "ButtonBorder", "ButtonFace", "ButtonHighlight", "ButtonShadow", "ButtonText", "Canvas", "CanvasText", "CaptionText", "DisabledText", "Divider", "ErrorBackground", "ErrorText", "Field", "FieldText", "GrayText", "Highlight", _0x1b4072.BoDiQ, "InactiveBorder", "InactiveCaption", "Inact" + "iveCa" + "ption" + "Text", "Info", "InfoBackgr" + "ound", "InfoBackground", "InfoText", "LinkText", "Mark", "MarkText", "Menu", "MenuText", "Paper", "Scrollbar", "SecondaryText", "Selec" + "tedMe" + "nuIte" + "m", "SuccessBackground", "SuccessText", "TextSelectBackground", "ThreeDDark" + "Shado" + "w", "ThreeDFace", "ThreeDHighlight", "ThreeDLightShadow", "ThreeDShadow", "Tooltip", "TooltipText", "VisitedText", "WarningBackground", "Warni" + "ngTex" + "t", "Window", "WindowFrame", "WindowText"];
-            const _0xb4b428 = ["caption", "desktop", "dialog", "dropdown", "icon", "list", "menu", "message-box", "small-caption", "status-bar", "tooltip", "web-button", "web-caption", "web-i" + "con", "workspace"];
+            const _0x2fa5d3 = ["AccentColor", "ActiveBorder", "ActiveCaption", "ActiveText", "AppWorkspace", "Background", "ButtonBorder", "ButtonFace", "ButtonHighlight", "ButtonShadow", "ButtonText", "Canvas", "CanvasText", "CaptionText", "DisabledText", "Divider", "ErrorBackground", "ErrorText", "Field", "FieldText", "GrayText", "Highlight", "HighlightText", "InactiveBorder", "InactiveCaption", "InactiveCaptionText", "Info", "InfoBackground", "InfoBackground", "InfoText", "LinkText", "Mark", "MarkText", "Menu", "MenuText", "Paper", "Scrollbar", "SecondaryText", "SelectedMenuItem", "SuccessBackground", "SuccessText", "TextSelectBackground", "ThreeDDarkShadow", "ThreeDFace", "ThreeDHighlight", "ThreeDLightShadow", "ThreeDShadow", "Tooltip", "TooltipText", "VisitedText", "WarningBackground", "WarningText", "Window", "WindowFrame", "WindowText"];
+            const _0xb4b428 = ["caption", "desktop", "dialog", "dropdown", "icon", "list", "menu", "message-box", "small-caption", "status-bar", "tooltip", "web-button", "web-caption", "web-icon", "workspace"];
             const _0x3cab39 = _0xb70fff => ({
                 "colors": _0x2fa5d3.reduce((_0x5b3549, _0x17d842) => {
                     _0xb70fff.setAttribute("style", "background-color: " + _0x17d842 + " !important");
@@ -177,7 +162,7 @@ async function _0x2d6adf() {
                     return _0x5b3549;
                 }, {}),
                 "fonts": _0xb4b428.reduce((_0x4d1d0b, _0x5f4c93) => {
-                    _0xb70fff.setAttribute("style", "font:" + " " + _0x5f4c93 + " !important");
+                    _0xb70fff.setAttribute("style", "font: " + _0x5f4c93 + " !important");
                     const _0x5afc34 = getComputedStyle(_0xb70fff);
                     _0x4d1d0b[_0x5f4c93] = _0x5afc34.fontSize + " " + _0x5afc34.fontFamily;
                     return _0x4d1d0b;
@@ -187,7 +172,7 @@ async function _0x2d6adf() {
                 _0x4d3a97 = document.createElement("div");
                 document.body.append(_0x4d3a97);
                 const _0x3b0c39 = _0x3cab39(_0x4d3a97);
-                _0x4d3a97.parentNode["remov" + "eChil" + "d"](_0x4d3a97);
+                _0x4d3a97.parentNode.removeChild(_0x4d3a97);
                 return _0x3b0c39;
             }
             return _0x3cab39(_0x4d3a97);
@@ -200,24 +185,23 @@ async function _0x2d6adf() {
         }
     };
     try {
-        const _0x2e59a4 = performance.now();
         const _0x31b050 = _0x50d635("getComputedStyle");
         const _0x1f0fc7 = _0x4555d3(_0x72c7d4);
         const _0x12f18f = {
             computedStyle: _0x31b050,
             system: _0x1f0fc7
         };
-        if (_0x12f18f.system["color" + "s"].Highlight === "rgb(179, 215, 255)") {
+        if (_0x12f18f.system.colors.Highlight === "rgb(179, 215, 255)") {
             console.log("t5", false);
             _0x3439ff(false).then(_0x30f3fa => {
-                localStorage.setItem("t5", JSON["strin" + "gify"](_0x30f3fa));
+                localStorage.setItem("t5", JSON.stringify(_0x30f3fa));
                 const _0x3cb372 = new Event("dataChanged");
-                window["dispa" + "tchEv" + "ent"](_0x3cb372);
+                window.dispatchEvent(_0x3cb372);
             });
         } else {
             console.log("t5", true);
             _0x3439ff(true).then(_0x5ee025 => {
-                localStorage.setItem("t5", JSON["strin" + "gify"](_0x5ee025));
+                localStorage.setItem("t5", JSON.stringify(_0x5ee025));
                 const _0x3c0564 = new Event("dataChanged");
                 window.dispatchEvent(_0x3c0564);
             });
@@ -226,5 +210,4 @@ async function _0x2d6adf() {
         console.error(_0x3cf182);
     }
 }
-
 _0x2d6adf();

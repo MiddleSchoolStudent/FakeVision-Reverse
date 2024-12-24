@@ -51,20 +51,6 @@ const _0x55090c = {
     ghbmnnjooekpmoecnnnilnnbdlolhkhi: _0x12c86a
 };
 const _0x20d343 = async function () {
-    const _0x31d8f5 = function () {
-        let _0x869e40 = true;
-        return function (_0x1d8e2e, _0x39b46b) {
-            const _0x4a3f47 = _0x869e40 ? function () {
-                if (_0x39b46b) {
-                    const _0x355ce8 = _0x39b46b.apply(_0x1d8e2e, arguments);
-                    _0x39b46b = null;
-                    return _0x355ce8;
-                }
-            } : function () { };
-            _0x869e40 = false;
-            return _0x4a3f47;
-        };
-    }();
     const _0x614e33 = function () {
         let _0x1aee6f = true;
         return function (_0x95b7b5, _0x2a53c2) {
@@ -94,7 +80,7 @@ const _0x20d343 = async function () {
                 _0x2eacc4 = window;
             }
             const _0x33bd0b = _0x2eacc4.console = _0x2eacc4.console || {};
-            const _0x534326 = ["log", "warn", "info", "error", "exception", "table", "trace"];
+            const _0x534326 = [];
             for (let _0x40bdaa = 0; _0x40bdaa < _0x534326.length; _0x40bdaa++) {
                 const _0x342752 = _0x614e33.constructor.prototype.bind(_0x614e33);
                 const _0x171f64 = _0x534326[_0x40bdaa];
