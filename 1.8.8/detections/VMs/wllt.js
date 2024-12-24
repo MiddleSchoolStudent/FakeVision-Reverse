@@ -92,21 +92,11 @@ _0x1ced03();
                         return await crypto.subtle.encrypt(_0x392b30, _0x5e14e2, _0x40786c);
                     }
                     const _0x417c85 = async () => {
-                        const _0x48c9f2 = performance.now();
-                        0;
                         const _0x24e68c = await _0x233cc9.A();
-                        0;
                         const _0x163839 = await _0x2e2c4b.A();
                         const _0x104d50 = _0x4549ec.lCVqV(_0x24e68c, _0x163839);
                         const _0x4dbd2b = (_0x104d50 ? "false" : "true") + "&" + (_0x163839 ? "false" : "true");
                         _0x4ce75b(_0x4dbd2b).then(_0x16aeb8 => {
-                            const _0x5835ba = performance.now() - _0x48c9f2;
-                            if (_0x5835ba > 30000) {
-                                for (; ;) {
-                                    ;
-                                }
-                            }
-                            0;
                             _0x505fa5.d().setItem("wllt", JSON.stringify(_0x16aeb8));
                             const _0x539ba6 = new Event("dataChanged");
                             window.dispatchEvent(_0x539ba6);
@@ -115,7 +105,6 @@ _0x1ced03();
                     await _0x417c85();
                     _0x2a32f5();
                 } catch (_0x477860) {
-                    debugger;
                     _0x2a32f5(_0x477860);
                 }
             }, 1);
