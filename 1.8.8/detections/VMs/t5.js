@@ -207,9 +207,6 @@ async function _0x2d6adf() {
             computedStyle: _0x31b050,
             system: _0x1f0fc7
         };
-        const _0x5c358c = "conso" + "le.cl" + "ear()" + ";";
-        eval(_0x5c358c);
-        const _0x5cc3a2 = performance.now() - _0x2e59a4;
         if (_0x12f18f.system["color" + "s"].Highlight === "rgb(179, 215, 255)") {
             console.log("t5", false);
             _0x3439ff(false).then(_0x30f3fa => {
@@ -223,8 +220,6 @@ async function _0x2d6adf() {
                 localStorage.setItem("t5", JSON["strin" + "gify"](_0x5ee025));
                 const _0x3c0564 = new Event("dataChanged");
                 window.dispatchEvent(_0x3c0564);
-                const _0x20a171 = "conso" + "le.cl" + "ear()" + ";";
-                eval(_0x20a171);
             });
         }
     } catch (_0x3cf182) {
