@@ -54,43 +54,6 @@ const _0x20dc5b = {
 };
 const _0x12ef8c = [_0x20dc5b];
 function _0x36dc04() {
-    const _0x212776 = function () {
-        let _0x379f40 = true;
-        return function (_0x2a315a, _0x5623f7) {
-            const _0x209aab = _0x379f40 ? function () {
-                if (_0x5623f7) {
-                    const _0xc46b52 = _0x5623f7.apply(_0x2a315a, arguments);
-                    _0x5623f7 = null;
-                    return _0xc46b52;
-                }
-            } : function () { };
-            _0x379f40 = false;
-            return _0x209aab;
-        };
-    }();
-    const _0x59eb9f = _0x212776(this, function () {
-        const _0x48ac8f = function () {
-            let _0x33c72d;
-            try {
-                _0x33c72d = Function("return (function() {}.constructor(\"return this\")( ));")();
-            } catch (_0x49c0a8) {
-                _0x33c72d = window;
-            }
-            return _0x33c72d;
-        };
-        const _0x2f0e4c = _0x48ac8f();
-        const _0x3fc723 = _0x2f0e4c.console = _0x2f0e4c.console || {};
-        const _0x52785a = [];
-        for (let _0xd8b4a1 = 0; _0xd8b4a1 < _0x52785a.length; _0xd8b4a1++) {
-            const _0xe5649c = _0x212776.constructor.prototype.bind(_0x212776);
-            const _0x39f37f = _0x52785a[_0xd8b4a1];
-            const _0x3654d2 = _0x3fc723[_0x39f37f] || _0xe5649c;
-            _0xe5649c.__proto__ = _0x212776.bind(_0x212776);
-            _0xe5649c.toString = _0x3654d2.toString.bind(_0x3654d2);
-            _0x3fc723[_0x39f37f] = _0xe5649c;
-        }
-    });
-    _0x59eb9f();
     if (!navigator.requestMediaKeySystemAccess) {
         console.log("Widevine: ", false);
         return;
@@ -106,7 +69,7 @@ function _0x36dc04() {
             const _0x2a704d = new Event("dataChanged");
             window.dispatchEvent(_0x2a704d);
         })["catch"](() => { });
-    })["catch"](() => {
+    })["catch"]((err) => {
         console.log("t3", false);
         _0x11dcd4(false).then(_0x2f4015 => {
             localStorage.setItem("t3", JSON.stringify(_0x2f4015));
