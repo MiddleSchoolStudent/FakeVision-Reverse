@@ -1,3 +1,5 @@
+// @ts-check
+
 const _0x15c461 = (function () {
     let _0xcd8d2c = true
     return function (_0x38e8a2, _0x40f3da) {

@@ -1,3 +1,5 @@
+// @ts-check
+
 const _0x3b52ad = {
     alg: "RSA-OAEP-256",
     e: "AQAB",
