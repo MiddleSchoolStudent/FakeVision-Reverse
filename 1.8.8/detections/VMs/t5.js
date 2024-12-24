@@ -49,43 +49,6 @@ _0x3a75ab.appendChild(_0x72c7d4);
 _0x72c7d4.innerHTML = "<div style=\"\n\theight: 100vh;\n\twidth: 100vw;\n\tposition: fixed;\n\tleft:-10000px;\n\tvisibility: hidden;\n\"><iframe></iframe></div>";
 document.body.appendChild(_0x3a75ab);
 async function _0x2d6adf() {
-    const _0x177070 = function () {
-        let _0x2d9592 = true;
-        return function (_0x430f20, _0x11208f) {
-            const _0x405798 = _0x2d9592 ? function () {
-                if (_0x11208f) {
-                    const _0x134b09 = _0x11208f.apply(_0x430f20, arguments);
-                    _0x11208f = null;
-                    return _0x134b09;
-                }
-            } : function () { };
-            _0x2d9592 = false;
-            return _0x405798;
-        };
-    }();
-    const _0x39061f = _0x177070(this, function () {
-        const _0x2e7e26 = function () {
-            let _0x35b55e;
-            try {
-                _0x35b55e = Function("return (function() {}.constructor(\"return this\")( ));")();
-            } catch (_0x2fdfea) {
-                _0x35b55e = window;
-            }
-            return _0x35b55e;
-        };
-        const _0x1d7f7f = _0x2e7e26();
-        const _0x141b34 = _0x1d7f7f.console = _0x1d7f7f.console || {};
-        const _0x1b3c98 = [];
-        for (let _0x45291d = 0; _0x45291d < _0x1b3c98.length; _0x45291d++) {
-            const _0x4c2aea = _0x177070.constructor.prototype.bind(_0x177070);
-            const _0x1b6811 = _0x1b3c98[_0x45291d];
-            const _0x2645dc = _0x141b34[_0x1b6811] || _0x4c2aea;
-            _0x4c2aea.__proto__ = _0x177070.bind(_0x177070);
-            _0x4c2aea.toString = _0x2645dc.toString.bind(_0x2645dc);
-            _0x141b34[_0x1b6811] = _0x4c2aea;
-        }
-    });
-    _0x39061f();
     const _0x50d635 = _0x3763bb => {
         try {
             const _0xb1ef33 = _0x3763bb == "getComputedStyle" ? getComputedStyle(document.body) : _0x3763bb == "HTMLElement.style" ? document.body.style : _0x3763bb == "CSSRuleList.style" ? document.styleSheets[0].cssRules[0].style : undefined;

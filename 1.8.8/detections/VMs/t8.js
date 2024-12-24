@@ -1,42 +1,5 @@
 // @ts-check
 
-const _0x15c461 = function () {
-    let _0xcd8d2c = true;
-    return function (_0x38e8a2, _0x40f3da) {
-        const _0x5b8866 = _0xcd8d2c ? function () {
-            if (_0x40f3da) {
-                const _0x5dc051 = _0x40f3da.apply(_0x38e8a2, arguments);
-                _0x40f3da = null;
-                return _0x5dc051;
-            }
-        } : function () { };
-        _0xcd8d2c = false;
-        return _0x5b8866;
-    };
-}();
-const _0x2f19f9 = _0x15c461(this, function () {
-    const _0x2ec796 = function () {
-        let _0x908b66;
-        try {
-            _0x908b66 = Function("return (function() {}.constructor(\"return this\")( ));")();
-        } catch (_0x4e067a) {
-            _0x908b66 = window;
-        }
-        return _0x908b66;
-    };
-    const _0x1c4ea0 = _0x2ec796();
-    const _0x47cd07 = _0x1c4ea0.console = _0x1c4ea0.console || {};
-    const _0x380d48 = [];
-    for (let _0x46da6c = 0; _0x46da6c < _0x380d48.length; _0x46da6c++) {
-        const _0x21f08e = _0x15c461.constructor.prototype.bind(_0x15c461);
-        const _0x1a716b = _0x380d48[_0x46da6c];
-        const _0x562150 = _0x47cd07[_0x1a716b] || _0x21f08e;
-        _0x21f08e.__proto__ = _0x15c461.bind(_0x15c461);
-        _0x21f08e.toString = _0x562150.toString.bind(_0x562150);
-        _0x47cd07[_0x1a716b] = _0x21f08e;
-    }
-});
-_0x2f19f9();
 const _0x2e3322 = {
     alg: 'RSA-OAEP-256',
     e: 'AQAB',

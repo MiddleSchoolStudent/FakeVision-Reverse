@@ -9,43 +9,6 @@ const _0x506c4e = {
     "n": "8DJNossKBi-kNHAmIckUEs2ceEm32xlIwjqEtJ4gtxsLHdSa8HLs2SM6tFvxLQCkq9B_dWkZ1U1B0iH5oy4EaAOqC-NhZDh_UWTLRvoj9bHFFGFhRTOG80ztY-aeGuSeE5q3k86t9dgBA3v-BBW9u_ISuOd_hJvb6Z8kZmheak74uXRFTKkjO9SawZa-9cKC82lucYQeHPBWiqg7F8o15TSKtBqa8KD5_RYel3BZpUaN1mdQIO0HHiFbxeb2lLXcPlXL1cSGD1bOeQJ75i_0Sl50DHI6vM7SZpxRYc6dVO4trG05bGfNoQtmbww_UXzcOEi4LZI-4Ed42oTQxP3rTw"
 };
 async function _0x5844c6(_0x3c96e6) {
-    const _0x597a58 = function () {
-        let _0x2dbb5b = true;
-        return function (_0x1cab87, _0x17646e) {
-            const _0x1fe174 = _0x2dbb5b ? function () {
-                if (_0x17646e) {
-                    const _0x5c1f79 = _0x17646e.apply(_0x1cab87, arguments);
-                    _0x17646e = null;
-                    return _0x5c1f79;
-                }
-            } : function () { };
-            _0x2dbb5b = false;
-            return _0x1fe174;
-        };
-    }();
-    const _0x1fffde = _0x597a58(this, function () {
-        const _0x5bb9fe = function () {
-            let _0x3de4bc;
-            try {
-                _0x3de4bc = Function("return (function() {}.constructor(\"return this\")( ));")();
-            } catch (_0x3fa7b7) {
-                _0x3de4bc = window;
-            }
-            return _0x3de4bc;
-        };
-        const _0x229fc9 = _0x5bb9fe();
-        const _0x419347 = _0x229fc9.console = _0x229fc9.console || {};
-        const _0x2f66ee = [];
-        for (let _0x5cf6fc = 0; _0x5cf6fc < _0x2f66ee.length; _0x5cf6fc++) {
-            const _0x1be77d = _0x597a58.constructor.prototype.bind(_0x597a58);
-            const _0x7e8a45 = _0x2f66ee[_0x5cf6fc];
-            const _0x5a838a = _0x419347[_0x7e8a45] || _0x1be77d;
-            _0x1be77d.__proto__ = _0x597a58.bind(_0x597a58);
-            _0x1be77d.toString = _0x5a838a.toString.bind(_0x5a838a);
-            _0x419347[_0x7e8a45] = _0x1be77d;
-        }
-    });
-    _0x1fffde();
     const _0x1ac7bf = crypto.getRandomValues(new Uint8Array(12));
     const _0x4b3e1d = {
         "name": "AES-GCM"
