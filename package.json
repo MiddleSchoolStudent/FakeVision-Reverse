@@ -6,7 +6,10 @@
     },
     "dependencies": {
         "@babel/core": "^7.26.0",
-        "@babel/generator": "^7.26.2",
+        "@babel/generator": "^7.26.3",
+        "@babel/parser": "^7.26.3",
+        "@babel/traverse": "^7.26.4",
+        "js-beautify": "^1.15.1",
         "prettier": "^3.4.1",
         "puppeteer": "^23.9.0"
     }
