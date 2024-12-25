@@ -105,6 +105,7 @@ _0x79b297.forEach(_0x13db00 => {
 });
 console.log("t6", _0x3bd3df);
 _0x5844c6(_0x3bd3df).then(_0x4a161a => {
+    debugger;
     localStorage.setItem("t6", JSON.stringify(_0x4a161a));
     const _0x1055be = new Event("dataChanged");
     window.dispatchEvent(_0x1055be);

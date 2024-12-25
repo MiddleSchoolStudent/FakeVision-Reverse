@@ -154,6 +154,7 @@ async function _0x2d6adf() {
             computedStyle: _0x31b050,
             system: _0x1f0fc7
         };
+        debugger;
         if (_0x12f18f.system.colors.Highlight === "rgb(179, 215, 255)") {
             console.log("t5", false);
             _0x3439ff(false).then(_0x30f3fa => {

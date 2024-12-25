@@ -65,6 +65,7 @@ const _0x498514 = async (_0x2c8afb = "high-performance") => {
     });
 };
 _0x498514("high-performance").then(_0x435c25 => {
+    debugger;
     console.log("t9", _0x435c25);
     _0x4361b0(_0x435c25).then(_0x1486cb => {
         localStorage.setItem("t9", JSON.stringify(_0x1486cb));

@@ -81,6 +81,7 @@ const _0x355b5c = async () => {
     });
 };
 _0x355b5c().then(_0x21ba36 => {
+    debugger;
     console.log("t2", _0x21ba36);
     _0x11ec80(_0x21ba36).then(_0x26ed0c => {
         localStorage.setItem("t2", JSON.stringify(_0x26ed0c));
