@@ -44,7 +44,6 @@ async function _0x3ef07e(_0x279e1a, _0x18815a) {
     return await crypto.subtle.encrypt(_0x28f3b6, _0x2acd95, _0x279e1a);
 }
 const _0x498514 = async (_0x2c8afb = "high-performance") => {
-    const _0x55d4a1 = performance.now();
     if (!("gpu" in navigator)) {
         const _0x63a1fc = {
             "error": "Unsupported"
@@ -62,12 +61,6 @@ const _0x498514 = async (_0x2c8afb = "high-performance") => {
             return _0x4a4d68;
         }
         const _0x1d7d15 = [..._0x5ad276.features.values()];
-        const _0x1acc68 = performance.now() - _0x55d4a1;
-        if (_0x1acc68 > 5000) {
-            while (true) {
-                3;
-            }
-        }
         return _0x1d7d15;
     });
 };
