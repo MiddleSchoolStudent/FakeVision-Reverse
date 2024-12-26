@@ -563,20 +563,20 @@
                             })(__webgl2Context_1),
                             ((webglContext) => {
                                 try {
-                                    const _0x234e47 = webglContext.getParameter(
+                                    const max_fragment_uniform_blocks = webglContext.getParameter(
                                         webglContext.MAX_FRAGMENT_UNIFORM_BLOCKS
                                     )
-                                    console.log('Reported maximum fragment uniform blocks: ' + _0x234e47)
+                                    console.log('Reported maximum fragment uniform blocks: ' + max_fragment_uniform_blocks)
                                     let _0x555347 = ''
                                     let _0x659bd6 = 'vec4 color = vec4(0.0);'
-                                    for (let _0x5d85af = 0; _0x5d85af < _0x234e47; _0x5d85af++) {
+                                    for (let i = 0; i < max_fragment_uniform_blocks; i++) {
                                         _0x555347 +=
                                             '\n        layout(std140) uniform FragBlock' +
-                                            _0x5d85af +
+                                            i +
                                             ' {\n            vec4 data' +
-                                            _0x5d85af +
+                                            i +
                                             ';\n        };\n        '
-                                        _0x659bd6 += 'color += data' + _0x5d85af + ' * 0.1;\n'
+                                        _0x659bd6 += 'color += data' + i + ' * 0.1;\n'
                                     }
                                     const _0x1799dc =
                                         '#version 300 es\n    precision highp float;\n    ' +
@@ -614,15 +614,15 @@
                             })(__webgl2Context_2),
                             (function (webglContext) {
                                 try {
-                                    const _0x118a86 = webglContext.getParameter(webglContext.MAX_VARYING_COMPONENTS)
-                                    console.log('Reported maximum varying components: ' + _0x118a86)
+                                    const max_varying_components = webglContext.getParameter(webglContext.MAX_VARYING_COMPONENTS)
+                                    console.log('Reported maximum varying components: ' + max_varying_components)
                                     let _0xf22ea2 = ''
                                     let _0x401af3 = ''
                                     let _0x26a5a3 = ''
-                                    for (let _0x7ef813 = 0; _0x7ef813 < _0x118a86; _0x7ef813++) {
-                                        _0xf22ea2 += 'out float vComponent' + _0x7ef813 + ';\n'
-                                        _0x401af3 += 'vComponent' + _0x7ef813 + ' = float(' + _0x7ef813 + ');\n'
-                                        _0x26a5a3 += 'color += vComponent' + _0x7ef813 + ' * 0.001;\n'
+                                    for (let i = 0; i < max_varying_components; i++) {
+                                        _0xf22ea2 += 'out float vComponent' + i + ';\n'
+                                        _0x401af3 += 'vComponent' + i + ' = float(' + i + ');\n'
+                                        _0x26a5a3 += 'color += vComponent' + i + ' * 0.001;\n'
                                     }
                                     const _0x28acdf =
                                         '#version 300 es\n    ' +
@@ -664,19 +664,19 @@
                             })(__webgl2Context_3),
                             ((webglContext) => {
                                 try {
-                                    const _0x133078 = webglContext.getParameter(webglContext.MAX_VARYING_VECTORS)
-                                    console.log('Reported maximum varying vectors: ' + _0x133078)
+                                    const max_varying_vectors = webglContext.getParameter(webglContext.MAX_VARYING_VECTORS)
+                                    console.log('Reported maximum varying vectors: ' + max_varying_vectors)
                                     let _0x2b99bf = 0
-                                    for (let _0x7b8101 = 1; _0x7b8101 <= _0x133078 + 1; _0x7b8101++) {
-                                        const _0x13b9cf = _0x4aa6af(_0x7b8101)
-                                        const _0x4213f0 = _0x422690(_0x7b8101)
+                                    for (let i = 1; i <= max_varying_vectors + 1; i++) {
+                                        const _0x13b9cf = _0x4aa6af(i)
+                                        const _0x4213f0 = _0x422690(i)
                                         if (!__createWebglContextProgram(webglContext, _0x13b9cf, _0x4213f0)) {
-                                            _0x2b99bf = _0x7b8101 - 1
+                                            _0x2b99bf = i - 1
                                             break
                                         }
-                                        _0x2b99bf = _0x7b8101
+                                        _0x2b99bf = i
                                     }
-                                    if (_0x2b99bf !== _0x133078) {
+                                    if (_0x2b99bf !== max_varying_vectors) {
                                         throw new Error('fake')
                                     }
                                     const _0x3c9d4c = {
@@ -697,18 +697,18 @@
                             })(__webgl2Context_4),
                             ((webglContext) => {
                                 try {
-                                    const _0xd08c0d = webglContext.getParameter(webglContext.MAX_VERTEX_UNIFORM_BLOCKS)
-                                    console.log('Reported maximum vertex uniform blocks: ' + _0xd08c0d)
+                                    const max_vertex_uniform_blocks = webglContext.getParameter(webglContext.MAX_VERTEX_UNIFORM_BLOCKS)
+                                    console.log('Reported maximum vertex uniform blocks: ' + max_vertex_uniform_blocks)
                                     let _0x46e65c = ''
                                     let _0x7377e8 = 'vec4 sum = vec4(0.0);'
-                                    for (let _0x1c2797 = 0; _0x1c2797 < _0xd08c0d; _0x1c2797++) {
+                                    for (let i = 0; i < max_vertex_uniform_blocks; i++) {
                                         _0x46e65c +=
                                             '\n        layout(std140) uniform Block' +
-                                            _0x1c2797 +
+                                            i +
                                             ' {\n            vec4 data' +
-                                            _0x1c2797 +
+                                            i +
                                             ';\n        };\n        '
-                                        _0x7377e8 += 'sum += data' + _0x1c2797 + ';\n'
+                                        _0x7377e8 += 'sum += data' + i + ';\n'
                                     }
                                     const _0x376780 =
                                         '#version 300 es\n    ' +
@@ -723,12 +723,12 @@
                                         '#version 300 es\n    precision highp float;\n    out vec4 outColor;\n\n    void main() {\n        outColor = vec4(1.0, 0.0, 0.0, 1.0);\n    }'
                                     )
                                     0
-                                    const _0x404f54 = _0x1eb4ea.__hasError(webglContext)
-                                    const _0x29a7b3 = {
-                                        error: _0x404f54,
+                                    const hasError = _0x1eb4ea.__hasError(webglContext)
+                                    const result = {
+                                        error: hasError,
                                     }
                                     webglContext.deleteProgram(program)
-                                    return _0x29a7b3
+                                    return result
                                 } catch (_0x3d82a6) {
                                     const _0x13f614 = {
                                         error: true,
@@ -754,10 +754,10 @@
             _0x328177.d(_0x55b670, result)
             const __hasError = (e) => e.getError() !== e.NO_ERROR
             const __setupWebglContextProgram = (webglContext, _0x22d85b, _0x1df30d) => {
-                const _0x178e8a = webglContext.createShader(webglContext.VERTEX_SHADER)
-                webglContext.shaderSource(_0x178e8a, _0x22d85b)
-                webglContext.compileShader(_0x178e8a)
-                if (!webglContext.getShaderParameter(_0x178e8a, webglContext.COMPILE_STATUS)) {
+                const shader = webglContext.createShader(webglContext.VERTEX_SHADER)
+                webglContext.shaderSource(shader, _0x22d85b)
+                webglContext.compileShader(shader)
+                if (!webglContext.getShaderParameter(shader, webglContext.COMPILE_STATUS)) {
                     throw new Error('fake')
                 }
                 const _0x595514 = webglContext.createShader(webglContext.FRAGMENT_SHADER)
@@ -767,7 +767,7 @@
                     throw new Error('fake')
                 }
                 const program = webglContext.createProgram()
-                webglContext.attachShader(program, _0x178e8a)
+                webglContext.attachShader(program, shader)
                 webglContext.attachShader(program, _0x595514)
                 webglContext.linkProgram(program)
                 if (!webglContext.getProgramParameter(program, webglContext.LINK_STATUS)) {
