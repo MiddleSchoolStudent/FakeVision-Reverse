@@ -129,7 +129,7 @@
                 return _0x2f8c3d !== webglContext.getParameter(webglContext.BLEND_SRC_RGB)
             }
             const _0x506296 = () => {
-                const _0x40ec65 = {
+                const options = {
                     alpha: false,
                     depth: true,
                     stencil: false,
@@ -138,26 +138,26 @@
                     preserveDrawingBuffer: false,
                     failIfMajorPerformanceCaveat: true,
                 }
-                const _0x320465 = document.createElement('canvas')
-                const _0x12816f = _0x320465.getContext('webgl', _0x40ec65)
-                const _0x4169ba = _0x12816f.getParameter(_0x12816f.BLUE_BITS)
-                const _0x4f89d1 = _0x12816f.createFramebuffer()
-                _0x12816f.bindFramebuffer(_0x12816f.FRAMEBUFFER, _0x4f89d1)
-                const _0x1a80d3 = _0x12816f.createRenderbuffer()
-                _0x12816f.bindRenderbuffer(_0x12816f.RENDERBUFFER, _0x1a80d3)
-                _0x12816f.renderbufferStorage(
-                    _0x12816f.RENDERBUFFER,
-                    _0x12816f.RGBA4,
-                    _0x320465.width,
-                    _0x320465.height
+                const canvas = document.createElement('canvas')
+                const webglContext = canvas.getContext('webgl', options)
+                const _0x4169ba = webglContext.getParameter(webglContext.BLUE_BITS)
+                const _0x4f89d1 = webglContext.createFramebuffer()
+                webglContext.bindFramebuffer(webglContext.FRAMEBUFFER, _0x4f89d1)
+                const _0x1a80d3 = webglContext.createRenderbuffer()
+                webglContext.bindRenderbuffer(webglContext.RENDERBUFFER, _0x1a80d3)
+                webglContext.renderbufferStorage(
+                    webglContext.RENDERBUFFER,
+                    webglContext.RGBA4,
+                    canvas.width,
+                    canvas.height
                 )
-                _0x12816f.framebufferRenderbuffer(
-                    _0x12816f.FRAMEBUFFER,
-                    _0x12816f.COLOR_ATTACHMENT0,
-                    _0x12816f.RENDERBUFFER,
+                webglContext.framebufferRenderbuffer(
+                    webglContext.FRAMEBUFFER,
+                    webglContext.COLOR_ATTACHMENT0,
+                    webglContext.RENDERBUFFER,
                     _0x1a80d3
                 )
-                return _0x4169ba !== _0x12816f.getParameter(_0x12816f.BLUE_BITS)
+                return _0x4169ba !== webglContext.getParameter(webglContext.BLUE_BITS)
             }
             const _0x8bc871 = () => {
                 0
@@ -266,71 +266,71 @@
             }
             const _0x570d07 = () => {
                 0
-                const _0x536b75 = _0x4ccfdb.__getWebgl2Context()
-                const _0x45300b = _0x536b75.getParameter(_0x536b75.READ_BUFFER)
-                const _0x2204fb = _0x536b75.createFramebuffer()
-                _0x536b75.bindFramebuffer(_0x536b75.FRAMEBUFFER, _0x2204fb)
-                const _0x30659b = _0x536b75.createTexture()
-                _0x536b75.bindTexture(_0x536b75.TEXTURE_2D, _0x30659b)
-                _0x536b75.texImage2D(
-                    _0x536b75.TEXTURE_2D,
+                const webglContext = _0x4ccfdb.__getWebgl2Context()
+                const _0x45300b = webglContext.getParameter(webglContext.READ_BUFFER)
+                const _0x2204fb = webglContext.createFramebuffer()
+                webglContext.bindFramebuffer(webglContext.FRAMEBUFFER, _0x2204fb)
+                const _0x30659b = webglContext.createTexture()
+                webglContext.bindTexture(webglContext.TEXTURE_2D, _0x30659b)
+                webglContext.texImage2D(
+                    webglContext.TEXTURE_2D,
                     0,
-                    _0x536b75.RGBA,
+                    webglContext.RGBA,
                     256,
                     256,
                     0,
-                    _0x536b75.RGBA,
-                    _0x536b75.UNSIGNED_BYTE,
+                    webglContext.RGBA,
+                    webglContext.UNSIGNED_BYTE,
                     null
                 )
-                _0x536b75.framebufferTexture2D(
-                    _0x536b75.FRAMEBUFFER,
-                    _0x536b75.COLOR_ATTACHMENT0,
-                    _0x536b75.TEXTURE_2D,
+                webglContext.framebufferTexture2D(
+                    webglContext.FRAMEBUFFER,
+                    webglContext.COLOR_ATTACHMENT0,
+                    webglContext.TEXTURE_2D,
                     _0x30659b,
                     0
                 )
                 let _0x47dc01 = 0
-                if (_0x536b75.checkFramebufferStatus(_0x536b75.FRAMEBUFFER) == _0x536b75.FRAMEBUFFER_COMPLETE) {
-                    _0x536b75.readBuffer(_0x536b75.COLOR_ATTACHMENT0)
-                    _0x47dc01 = _0x536b75.getParameter(_0x536b75.READ_BUFFER)
+                if (webglContext.checkFramebufferStatus(webglContext.FRAMEBUFFER) == webglContext.FRAMEBUFFER_COMPLETE) {
+                    webglContext.readBuffer(webglContext.COLOR_ATTACHMENT0)
+                    _0x47dc01 = webglContext.getParameter(webglContext.READ_BUFFER)
                 }
-                _0x536b75.bindFramebuffer(_0x536b75.FRAMEBUFFER, null)
+                webglContext.bindFramebuffer(webglContext.FRAMEBUFFER, null)
                 return _0x45300b !== _0x47dc01
             }
             const _0x24c47d = () => {
                 0
-                const _0x138965 = _0x4ccfdb.__getWebgl2Context()
-                const _0x11e3a1 = _0x138965.getParameter(_0x138965.DRAW_BUFFER0)
-                const _0x48faed = _0x138965.createFramebuffer()
-                _0x138965.bindFramebuffer(_0x138965.FRAMEBUFFER, _0x48faed)
-                const _0x45b46a = _0x138965.createTexture()
-                _0x138965.bindTexture(_0x138965.TEXTURE_2D, _0x45b46a)
-                _0x138965.texImage2D(
-                    _0x138965.TEXTURE_2D,
+                const webglContext = _0x4ccfdb.__getWebgl2Context()
+                const _0x11e3a1 = webglContext.getParameter(webglContext.DRAW_BUFFER0)
+                const _0x48faed = webglContext.createFramebuffer()
+                webglContext.bindFramebuffer(webglContext.FRAMEBUFFER, _0x48faed)
+                const _0x45b46a = webglContext.createTexture()
+                webglContext.bindTexture(webglContext.TEXTURE_2D, _0x45b46a)
+                webglContext.texImage2D(
+                    webglContext.TEXTURE_2D,
                     0,
-                    _0x138965.RGBA,
+                    webglContext.RGBA,
                     256,
                     256,
                     0,
-                    _0x138965.RGBA,
-                    _0x138965.UNSIGNED_BYTE,
+                    webglContext.RGBA,
+                    webglContext.UNSIGNED_BYTE,
                     null
                 )
-                _0x138965.framebufferTexture2D(
-                    _0x138965.FRAMEBUFFER,
-                    _0x138965.COLOR_ATTACHMENT0,
-                    _0x138965.TEXTURE_2D,
+                webglContext.framebufferTexture2D(
+                    webglContext.FRAMEBUFFER,
+                    webglContext.COLOR_ATTACHMENT0,
+                    webglContext.TEXTURE_2D,
                     _0x45b46a,
                     0
                 )
                 let _0x23d7f3 = 0
-                if (_0x138965.checkFramebufferStatus(_0x138965.FRAMEBUFFER) == _0x138965.FRAMEBUFFER_COMPLETE) {
-                    _0x138965.drawBuffers([_0x138965.COLOR_ATTACHMENT0])
-                    _0x138965.drawBuffers([_0x138965.NONE])
-                    _0x23d7f3 = _0x138965.getParameter(_0x138965.DRAW_BUFFER0)
+                if (webglContext.checkFramebufferStatus(webglContext.FRAMEBUFFER) == webglContext.FRAMEBUFFER_COMPLETE) {
+                    webglContext.drawBuffers([webglContext.COLOR_ATTACHMENT0])
+                    webglContext.drawBuffers([webglContext.NONE])
+                    _0x23d7f3 = webglContext.getParameter(webglContext.DRAW_BUFFER0)
                 }
-                _0x138965.bindFramebuffer(_0x138965.FRAMEBUFFER, null)
+                webglContext.bindFramebuffer(webglContext.FRAMEBUFFER, null)
                 return _0x11e3a1 !== _0x23d7f3
             }
             const _0x366d54 = () => {
