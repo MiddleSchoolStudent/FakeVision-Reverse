@@ -366,37 +366,37 @@ function __getCompressedGPUInfo(t) {
 }
 
 async function __getInfoFromWorker() {
-    const _0x55ddad = (_0x866bf8) => {
+    const __safeCallFn = (fn) => {
         try {
-            return _0x866bf8()
-        } catch (_0x669a17) {
+            return fn()
+        } catch (err) {
             return
         }
     },
         _0x5c7fa1 = (_0x4aa132, _0x27a617) => _0x4aa132 && _0x4aa132.__proto__.constructor.name == _0x27a617,
-        _0x244f55 = ({ scriptSource: _0x89fce2 }) =>
+        _0x244f55 = ({ scriptSource: __scriptSource }) =>
             new Promise((_0x4dcddf) => {
                 const _0x16daac = setTimeout(() => _0x4dcddf(null), 3000),
-                    _0x4e5107 = _0x55ddad(() => new Worker(_0x89fce2))
+                    _0x4e5107 = __safeCallFn(() => new Worker(__scriptSource))
                 if (!_0x5c7fa1(_0x4e5107, 'Worker')) return _0x4dcddf(null)
                 _0x4e5107.onmessage = (_0x389290) => (
                     _0x4e5107.terminate(), clearTimeout(_0x16daac), _0x4dcddf(_0x389290.data)
                 )
             }),
-        _0x4c37c9 = ({ scriptSource: _0x309bfa }) =>
+        _0x4c37c9 = ({ scriptSource: __scriptSource }) =>
             new Promise((_0x482557) => {
                 const _0xf5dbec = setTimeout(() => _0x482557(null), 3000),
-                    _0x2dee69 = _0x55ddad(() => new SharedWorker(_0x309bfa))
+                    _0x2dee69 = __safeCallFn(() => new SharedWorker(__scriptSource))
                 if (!_0x5c7fa1(_0x2dee69, 'SharedWorker')) return _0x482557(null)
                 _0x2dee69.port.start(),
                     (_0x2dee69.port.onmessage = (_0x5b2459) => (
                         _0x2dee69.port.close(), clearTimeout(_0xf5dbec), _0x482557(_0x5b2459.data)
                     ))
             }),
-        _0x138a59 = ({ scriptSource: _0x486121 }) =>
+        __getServiceWorkerData = ({ scriptSource: _0x486121 }) =>
             new Promise((_0x3ccf8b) => {
                 const _0x5d7e75 = setTimeout(() => _0x3ccf8b(null), 4000)
-                return _0x55ddad(() => navigator.serviceWorker.register)
+                return __safeCallFn(() => navigator.serviceWorker.register)
                     ? navigator.serviceWorker
                         .register('/test.js', {
                             scope: '',
@@ -416,90 +416,92 @@ async function __getInfoFromWorker() {
                         .catch((_0x1957e4) => (console.error(_0x1957e4), clearTimeout(_0x5d7e75), _0x3ccf8b(null)))
                     : _0x3ccf8b(null)
             }),
-        _0x5e355f = '/test.js'
+        __scriptSource = '/test.js'
         ; (_0x5828a4 = 'ServiceWorkerGlobalScope'), (_0x310c42 = 'service')
-    let _0x5a890a = await _0x138a59({
-        scriptSource: _0x5e355f,
-    }).catch((_0x5a23ba) => {
-        console.error(_0x5a23ba.message)
+    let __serviceWorkerData = await __getServiceWorkerData({
+        scriptSource: __scriptSource,
+    }).catch((err) => {
+        console.error(err.message)
     })
     if (
-        ((_0x5a890a || {}).userAgent ||
+        ((__serviceWorkerData || {}).userAgent ||
             ((_0x5828a4 = 'SharedWorkerGlobalScope'),
                 (_0x310c42 = 'shared'),
-                (_0x5a890a = await _0x4c37c9({
-                    scriptSource: _0x5e355f,
+                (__serviceWorkerData = await _0x4c37c9({
+                    scriptSource: __scriptSource,
                 }).catch((_0x4b1058) => {
                     console.error(_0x4b1058.message)
                 }))),
-            (_0x5a890a || {}).userAgent ||
+            (__serviceWorkerData || {}).userAgent ||
             ((_0x5828a4 = 'DedicatedWorkerGlobalScope'),
                 (_0x310c42 = 'dedicated'),
-                (_0x5a890a = await _0x244f55({
-                    scriptSource: _0x5e355f,
+                (__serviceWorkerData = await _0x244f55({
+                    scriptSource: __scriptSource,
                 }).catch((_0x2ff3a7) => {
                     console.error(_0x2ff3a7.message)
                 }))),
-            !(_0x5a890a || {}).userAgent)
+            !(__serviceWorkerData || {}).userAgent)
     )
         return
-            ; (_0x5a890a.system = (0, __engineInfo.__getOSFromUA)(_0x5a890a.userAgent)),
-                (_0x5a890a.device = (0, __engineInfo.__getOSTypeAndName)({
-                    userAgent: _0x5a890a.userAgent,
+            ; (__serviceWorkerData.system = (0, __engineInfo.__getOSFromUA)(__serviceWorkerData.userAgent)),
+                (__serviceWorkerData.device = (0, __engineInfo.__getOSTypeAndName)({
+                    userAgent: __serviceWorkerData.userAgent,
                 }))
     const {
-        system: _0x4d59ed,
-        userAgent: _0x1c2589,
-        userAgentData: _0x556adf,
-        platform: _0x5f2770,
-        deviceMemory: _0x1eb411,
-        hardwareConcurrency: _0x5e6811,
-    } = _0x5a890a || {}
+        system: __system,
+        userAgent: __userAgent,
+        userAgentData: __userAgentData,
+        platform: __platform,
+        deviceMemory: __deviceMemory,
+        hardwareConcurrency: __hardwareConcurrency,
+    } = __serviceWorkerData || {}
     if (
-        (_0x5f2770 != navigator.platform && __detectResults.Z.setValue('worker', '8'),
-            _0x1c2589 != navigator.userAgent && __detectResults.Z.setValue('worker', '7'),
-            _0x5e6811 && _0x5e6811 != navigator.hardwareConcurrency && __detectResults.Z.setValue('worker', '6'),
-            _0x1eb411 && _0x1eb411 != navigator.deviceMemory && __detectResults.Z.setValue('worker', '5'),
-            _0x5a890a.lies.proto)
+        (__platform != navigator.platform && __detectResults.Z.setValue('worker', '8'),
+            __userAgent != navigator.userAgent && __detectResults.Z.setValue('worker', '7'),
+            __hardwareConcurrency &&
+            __hardwareConcurrency != navigator.hardwareConcurrency &&
+            __detectResults.Z.setValue('worker', '6'),
+            __deviceMemory && __deviceMemory != navigator.deviceMemory && __detectResults.Z.setValue('worker', '5'),
+            __serviceWorkerData.lies.proto)
     ) {
-        const { proto: _0x463704 } = _0x5a890a.lies
+        const { proto: _0x463704 } = __serviceWorkerData.lies
         Object.keys(_0x463704).forEach((_0x32be79) => {
             _0x463704[_0x32be79].forEach((_0x1fdeb1) => __detectResults.Z.setValue('worker', _0x1fdeb1))
         })
     }
-    const [_0x50c7db, _0x25eb67] = (0, __engineInfo.__OSTypeTextFromUserAgentAndPlatform)(_0x1c2589, _0x5f2770)
-    _0x50c7db != _0x25eb67 &&
-        ((_0x5a890a.lied = true),
-            (_0x5a890a.lies.os = _0x25eb67 + ' platform and ' + _0x50c7db + '\x20user\x20agent\x20do\x20not\x20match'),
+    const [__rgx, __osType] = (0, __engineInfo.__OSTypeTextFromUserAgentAndPlatform)(__userAgent, __platform)
+    __rgx != __osType &&
+        ((__serviceWorkerData.lied = true),
+            (__serviceWorkerData.lies.os = __osType + ' platform and ' + __rgx + '\x20user\x20agent\x20do\x20not\x20match'),
             __detectResults.Z.setValue('worker', '4'))
     const _0x25cb19 = (0, __engineInfo.__navigatorHasSpecificProperty)(),
         _0x15c554 = (0, __engineInfo.__getBrowserType)({
-            ua: _0x1c2589,
-            os: _0x4d59ed,
+            ua: __userAgent,
+            os: __system,
             isVivaldi: _0x25cb19,
             isBrave: false,
         }),
         _0xc6af08 =
-            /safari/i.test(_0x15c554) || /iphone|ipad/i.test(_0x1c2589)
+            /safari/i.test(_0x15c554) || /iphone|ipad/i.test(__userAgent)
                 ? 'JavaScriptCore'
-                : /firefox/i.test(_0x1c2589)
+                : /firefox/i.test(__userAgent)
                     ? 'SpiderMonkey'
-                    : /chrome/i.test(_0x1c2589)
+                    : /chrome/i.test(__userAgent)
                         ? 'V8'
                         : void 0
     _0xc6af08 != __engineInfo.__jsEngineName &&
-        ((_0x5a890a.lied = true),
-            (_0x5a890a.lies.engine =
+        ((__serviceWorkerData.lied = true),
+            (__serviceWorkerData.lies.engine =
                 __engineInfo.__jsEngineName + ' JS runtime and ' + _0xc6af08 + ' user agent do not match'),
             __detectResults.Z.setValue('worker', '3'))
     const _0x73bc72 = (_0x534c07) => (/\d+/.exec(_0x534c07) || [])[0],
         _0x3c25c4 = _0x73bc72(_0x15c554),
-        _0x5bea34 = _0x73bc72(_0x556adf ? _0x556adf.uaFullVersion : '')
+        _0x5bea34 = _0x73bc72(__userAgentData ? __userAgentData.uaFullVersion : '')
     _0x5bea34 &&
         _0x3c25c4 &&
         _0x5bea34 != _0x3c25c4 &&
-        ((_0x5a890a.lied = true),
-            (_0x5a890a.lies.version =
+        ((__serviceWorkerData.lied = true),
+            (__serviceWorkerData.lies.version =
                 'userAgentData version ' + _0x5bea34 + ' and user agent version ' + _0x3c25c4 + ' do not match'),
             __detectResults.Z.setValue('worker', '2'))
     const _0x4b30cc = __engineInfo.__isV8 && CSS.supports('accent-color: initial'),
@@ -522,13 +524,13 @@ async function __getInfoFromWorker() {
             const _0x4bfa40 = +_0x2e0344[0] > 0
             return (_0x4bfa40 && !_0x1f625f) || (!_0x4bfa40 && _0x1f625f)
         }
-    _0x4511c9(_0x5a890a.device, _0x556adf) &&
-        ((_0x5a890a.lied = true),
-            (_0x5a890a.lies.platformVersion = 'platform version is fake'),
+    _0x4511c9(__serviceWorkerData.device, __userAgentData) &&
+        ((__serviceWorkerData.lied = true),
+            (__serviceWorkerData.lies.platformVersion = 'platform version is fake'),
             __detectResults.Z.setValue('worker', '1')),
-        (_0x5a890a.userAgentVersion = _0x3c25c4),
-        (_0x5a890a.userAgentDataVersion = _0x5bea34),
-        (_0x5a890a.userAgentEngine = _0xc6af08)
+        (__serviceWorkerData.userAgentVersion = _0x3c25c4),
+        (__serviceWorkerData.userAgentDataVersion = _0x5bea34),
+        (__serviceWorkerData.userAgentEngine = _0xc6af08)
     const _0x216619 = Object.assign(
         Object.assign(
             {},
@@ -537,16 +539,16 @@ async function __getInfoFromWorker() {
                     return {
                         parts: __getKnownGPUInfo(_0x402038),
                     }
-            })(_0x5a890a.webglRenderer) || {}
+            })(__serviceWorkerData.webglRenderer) || {}
         ),
         {
-            compressedGPU: __getCompressedGPUInfo(_0x5a890a.webglRenderer),
+            compressedGPU: __getCompressedGPUInfo(__serviceWorkerData.webglRenderer),
         }
     )
-    return Object.assign(Object.assign({}, _0x5a890a), {
+    return Object.assign(Object.assign({}, __serviceWorkerData), {
         gpu: _0x216619,
-        uaPostReduction: (0, __engineInfo.__getOSTypeAndVersionFromUserAgent)(_0x5a890a.userAgent),
+        uaPostReduction: (0, __engineInfo.__getOSTypeAndVersionFromUserAgent)(__serviceWorkerData.userAgent),
     })
 }
 
-await __getInfoFromWorker();
+await __getInfoFromWorker()
