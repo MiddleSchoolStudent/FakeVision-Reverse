@@ -106,6 +106,7 @@ __classTypes.forEach((__classType) => {
     }
 });
 console.log('t6', result);
+debugger;
 _0x5844c6(result)
     .then((_0x4a161a) => {
         debugger;
