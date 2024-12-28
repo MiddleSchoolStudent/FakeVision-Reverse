@@ -1,0 +1,41 @@
+{
+    "platform": 1,
+    "clientHints": {
+        "architecture": "x86",
+        "bitness": "64",
+        "brands": [
+            {
+                "brand": "Google Chrome",
+                "version": "131"
+            },
+            {
+                "brand": "Chromium",
+                "version": "131"
+            },
+            {
+                "brand": "Not_A Brand",
+                "version": "24"
+            }
+        ],
+        "fullVersionList": [
+            {
+                "brand": "Google Chrome",
+                "version": "131.0.6778.205"
+            },
+            {
+                "brand": "Chromium",
+                "version": "131.0.6778.205"
+            },
+            {
+                "brand": "Not_A Brand",
+                "version": "24.0.0.0"
+            }
+        ],
+        "mobile": false,
+        "model": "",
+        "platform": "Windows",
+        "platformVersion": "10.0.0",
+        "uaFullVersion": "131.0.6778.205",
+        "wow64": false
+    }
+}
