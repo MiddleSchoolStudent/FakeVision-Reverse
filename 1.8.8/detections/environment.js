@@ -1,19 +1,33 @@
 // @ts-check
 
-
 var __OSTypeText = {
     i: {
         WINDOWS: 'Windows',
         LINUX: 'Linux',
         APPLE: 'Apple',
         OTHER: 'Other',
-    }
+    },
 }
+
+const __navigatorSpecificKeys = [
+    'joinAdInterestGroup',
+    'leaveAdInterestGroup',
+    'updateAdInterestGroups',
+    'clearOriginJoinedAdInterestGroups',
+    'createAuctionNonce',
+    'deprecatedReplaceInURN',
+    'deprecatedURNToURL',
+    'adAuctionComponents',
+    'runAdAuction',
+    'canLoadAdAuctionFencedFrame',
+    'deprecatedRunAdAuctionEnforcesKAnonymity',
+]
 
 var __engineInfo = {
     __isV8AndNotChromium: false,
     __isJavaScriptCore: false,
-    __testFonts: "\n\t'Segoe Fluent Icons',\n\t'Ink Free',\n\t'Bahnschrift',\n\t'Segoe MDL2 Assets',\n\t'HoloLens MDL2 Assets',\n\t'Leelawadee UI',\n\t'Javanese Text',\n\t'Segoe UI Emoji',\n\t'Aldhabi',\n\t'Gadugi',\n\t'Myanmar Text',\n\t'Nirmala UI',\n\t'Lucida Console',\n\t'Cambria Math',\n\t'Bai Jamjuree',\n\t'Chakra Petch',\n\t'Charmonman',\n\t'Fahkwang',\n\t'K2D',\n\t'Kodchasan',\n\t'KoHo',\n\t'Sarabun',\n\t'Srisakdi',\n\t'Galvji',\n\t'MuktaMahee Regular',\n\t'InaiMathi Bold',\n\t'American Typewriter Semibold',\n\t'Futura Bold',\n\t'SignPainter-HouseScript Semibold',\n\t'PingFang HK Light',\n\t'Kohinoor Devanagari Medium',\n\t'Luminari',\n\t'Geneva',\n\t'Helvetica Neue',\n\t'Droid Sans Mono',\n\t'Dancing Script',\n\t'Roboto',\n\t'Ubuntu',\n\t'Liberation Mono',\n\t'Source Code Pro',\n\t'DejaVu Sans',\n\t'OpenSymbol',\n\t'Chilanka',\n\t'Cousine',\n\t'Arimo',\n\t'Jomolhari',\n\t'MONO',\n\t'Noto Color Emoji',\n\tsans-serif !important\n",
+    __testFonts:
+        "\n\t'Segoe Fluent Icons',\n\t'Ink Free',\n\t'Bahnschrift',\n\t'Segoe MDL2 Assets',\n\t'HoloLens MDL2 Assets',\n\t'Leelawadee UI',\n\t'Javanese Text',\n\t'Segoe UI Emoji',\n\t'Aldhabi',\n\t'Gadugi',\n\t'Myanmar Text',\n\t'Nirmala UI',\n\t'Lucida Console',\n\t'Cambria Math',\n\t'Bai Jamjuree',\n\t'Chakra Petch',\n\t'Charmonman',\n\t'Fahkwang',\n\t'K2D',\n\t'Kodchasan',\n\t'KoHo',\n\t'Sarabun',\n\t'Srisakdi',\n\t'Galvji',\n\t'MuktaMahee Regular',\n\t'InaiMathi Bold',\n\t'American Typewriter Semibold',\n\t'Futura Bold',\n\t'SignPainter-HouseScript Semibold',\n\t'PingFang HK Light',\n\t'Kohinoor Devanagari Medium',\n\t'Luminari',\n\t'Geneva',\n\t'Helvetica Neue',\n\t'Droid Sans Mono',\n\t'Dancing Script',\n\t'Roboto',\n\t'Ubuntu',\n\t'Liberation Mono',\n\t'Source Code Pro',\n\t'DejaVu Sans',\n\t'OpenSymbol',\n\t'Chilanka',\n\t'Cousine',\n\t'Arimo',\n\t'Jomolhari',\n\t'MONO',\n\t'Noto Color Emoji',\n\tsans-serif !important\n",
     __isDesktopOrMobileType: () => 'desktop',
     __webglInfo: {},
     __getOSFromUA: (userAgent) =>
@@ -62,8 +76,7 @@ var __engineInfo = {
             _0x4cd1ae = /(ppc |intel |)(mac|mac |)os (x |x|)(\d{2}(_|\.)\d{1,2}|\d{2,})/i,
             _0x505167 =
                 /((symbianos|nokia|blackberry|morphos|mac).+)|\/linux|freebsd|symbos|series \d+|win\d+|unix|hp-ux|bsdi|bsd|x86_64/i,
-            _0x3ab34f = (_0x31289f, _0x4a07fb) =>
-                _0x31289f.filter((_0x16158d) => _0x4a07fb.test(_0x16158d)).length
+            _0x3ab34f = (_0x31289f, _0x4a07fb) => _0x31289f.filter((_0x16158d) => _0x4a07fb.test(_0x16158d)).length
         if (
             ((userAgent = userAgent
                 .trim()
@@ -83,9 +96,7 @@ var __engineInfo = {
             if (_0x3ab34f(_0x545de9, _0x28556d))
                 return _0x545de9
                     .map((_0x552f6b) =>
-                        _0x41b49b.test(_0x552f6b)
-                            ? _0x41b49b.exec(_0x552f6b)[0].replace('-', '\x20')
-                            : _0x552f6b
+                        _0x41b49b.test(_0x552f6b) ? _0x41b49b.exec(_0x552f6b)[0].replace('-', '\x20') : _0x552f6b
                     )
                     .filter((_0x3b4764) => !_0x392b42.test(_0x3b4764))
                     .join('\x20')
@@ -152,15 +163,12 @@ var __engineInfo = {
                                     0xc: 'Monterey',
                                     0xd: 'Ventura',
                                 },
-                                _0x44d5ac = (
-                                    (/(\d{2}(_|\.)\d{1,2}|\d{2,})/.exec(_0x3f865e) || [])[0] || ''
-                                ).replace(/\./g, '_'),
+                                _0x44d5ac = ((/(\d{2}(_|\.)\d{1,2}|\d{2,})/.exec(_0x3f865e) || [])[0] || '').replace(
+                                    /\./g,
+                                    '_'
+                                ),
                                 _0x4692dd =
-                                    _0x33b1f9[
-                                    /^10/.test(_0x44d5ac)
-                                        ? _0x44d5ac
-                                        : (/^\d{2,}/.exec(_0x44d5ac) || [])[0]
-                                    ]
+                                    _0x33b1f9[/^10/.test(_0x44d5ac) ? _0x44d5ac : (/^\d{2,}/.exec(_0x44d5ac) || [])[0]]
                             return _0x4692dd ? 'macOS ' + _0x4692dd : _0x3f865e
                         }
                         return _0x254d87
@@ -202,6 +210,61 @@ var __engineInfo = {
                             : __OSTypeText.i.OTHER,
             ]
             : [__rgx]
+    },
+    __navigatorHasSpecificProperty: () => {
+        const __navigatorPrototypes = Object.keys(Object.getPrototypeOf(navigator))
+        return __navigatorSpecificKeys.every((key) => !__navigatorPrototypes.includes(key))
+    },
+    __getBrowserType: ({ ua, os, isBrave, isVivaldi }) => {
+        const _0x212741 = /ipad|iphone|ipod|ios|mac/gi.test(os),
+            _0x4a40c3 = /OPR\//g.test(ua),
+            _0x51a499 = /DuckDuckGo/g.test(ua),
+            _0x589503 = /YaBrowser/g.test(ua),
+            _0x127a46 = ua.match(/(palemoon)\/(\d+)./i),
+            _0x50d3bd = ua.match(/(edgios|edg|edge|edga)\/(\d+)./i),
+            _0x2cbb2e = _0x50d3bd && /edgios/i.test(_0x50d3bd[1]),
+            _0x25453c = ua.match(/(crios|chrome)\/(\d+)./i),
+            _0xbac686 = ua.match(/(fxios|firefox)\/(\d+)./i),
+            _0x446fa4 =
+                /AppleWebKit/g.test(ua) &&
+                /Safari/g.test(ua) &&
+                !_0xbac686 &&
+                !_0x25453c &&
+                !_0x50d3bd &&
+                ua.match(/(version)\/(\d+(\.\d+)+)\s(mobile|safari)/i)
+        return _0x25453c
+            ? _0x25453c[1] +
+            '\x20' +
+            _0x25453c[2] +
+            (_0x4a40c3
+                ? '\x20Opera'
+                : isVivaldi
+                    ? '\x20Vivaldi'
+                    : _0x51a499
+                        ? ' DuckDuckGo'
+                        : _0x589503
+                            ? '\x20Yandex'
+                            : _0x50d3bd
+                                ? ' Edge'
+                                : isBrave
+                                    ? ' Brave'
+                                    : '')
+            : _0x2cbb2e
+                ? _0x50d3bd[1] + '\x20' + _0x50d3bd[2]
+                : _0xbac686
+                    ? (_0x127a46 ? _0x127a46[1] : _0xbac686[1]) +
+                    '\x20' +
+                    (_0x127a46 ? _0x127a46[2] : _0xbac686[2])
+                    : _0x212741 && _0x446fa4
+                        ? 'Safari ' + _0x446fa4[2]
+                        : 'unknown'
+    },
+    __getOSTypeAndVersionFromUserAgent: (__userAgent) => {
+        const __osTypeAndVersion =
+            (/Mozilla\/5\.0 \((Macintosh; Intel Mac OS X 10_15_7|Windows NT 10\.0; Win64; x64|(X11; (CrOS|Linux) x86_64)|(Linux; Android 10(; K|)))\) AppleWebKit\/537\.36 \(KHTML, like Gecko\) Chrome\/\d+\.0\.0\.0( Mobile|) Safari\/537\.36/.exec(
+                __userAgent
+            ) || [])[1]
+        return !!__osTypeAndVersion
     }
 }
 
@@ -215,10 +278,10 @@ var __detectResults = {
             return this._value[key]
         },
     },
-};
+}
 
 var _0x310c42 = '',
-    _0x5828a4 = '';
+    _0x5828a4 = ''
 
 var __getKnownGPUInfo = (t) => {
     const _0x216493 = [
@@ -285,7 +348,7 @@ var __getKnownGPUInfo = (t) => {
         'llvmpipe',
     ].filter((_0x74cbd9) => ('' + t).includes(_0x74cbd9))
     return [...new Set(_0x216493)].sort().join(',\x20')
-};
+}
 
 function __getCompressedGPUInfo(t) {
     if (t)
@@ -299,10 +362,9 @@ function __getCompressedGPUInfo(t) {
             .trim()
             .replace(
                 /((r|g)(t|)(x|s|\d) |Graphics |GeForce |Radeon (HD |Pro |))(\d+)/i,
-                (..._0x61a21b) =>
-                    '' + _0x61a21b[1] + _0x61a21b[6][0] + _0x61a21b[6].slice(1).replace(/\d/g, '0') + 's'
+                (..._0x61a21b) => '' + _0x61a21b[1] + _0x61a21b[6][0] + _0x61a21b[6].slice(1).replace(/\d/g, '0') + 's'
             )
-};
+}
 
 async function __getInfoFromWorker() {
     const _0x55ddad = (_0x866bf8) => {
@@ -312,8 +374,7 @@ async function __getInfoFromWorker() {
             return
         }
     },
-        _0x5c7fa1 = (_0x4aa132, _0x27a617) =>
-            _0x4aa132 && _0x4aa132.__proto__.constructor.name == _0x27a617,
+        _0x5c7fa1 = (_0x4aa132, _0x27a617) => _0x4aa132 && _0x4aa132.__proto__.constructor.name == _0x27a617,
         _0x244f55 = ({ scriptSource: _0x89fce2 }) =>
             new Promise((_0x4dcddf) => {
                 const _0x16daac = setTimeout(() => _0x4dcddf(null), 3000),
@@ -330,9 +391,7 @@ async function __getInfoFromWorker() {
                 if (!_0x5c7fa1(_0x2dee69, 'SharedWorker')) return _0x482557(null)
                 _0x2dee69.port.start(),
                     (_0x2dee69.port.onmessage = (_0x5b2459) => (
-                        _0x2dee69.port.close(),
-                        clearTimeout(_0xf5dbec),
-                        _0x482557(_0x5b2459.data)
+                        _0x2dee69.port.close(), clearTimeout(_0xf5dbec), _0x482557(_0x5b2459.data)
                     ))
             }),
         _0x138a59 = ({ scriptSource: _0x486121 }) =>
@@ -347,9 +406,7 @@ async function __getInfoFromWorker() {
                             _0x5c7fa1(_0x14c74c, 'ServiceWorkerRegistration')
                                 ? navigator.serviceWorker.ready.then((_0x508d0c) => {
                                     _0x508d0c.active?.postMessage(void 0),
-                                        (navigator.serviceWorker.onmessage = (
-                                            _0x5520a7
-                                        ) => (
+                                        (navigator.serviceWorker.onmessage = (_0x5520a7) => (
                                             _0x508d0c.unregister(),
                                             clearTimeout(_0x5d7e75),
                                             _0x3ccf8b(_0x5520a7.data)
@@ -357,13 +414,7 @@ async function __getInfoFromWorker() {
                                 })
                                 : _0x3ccf8b(null)
                         )
-                        .catch(
-                            (_0x1957e4) => (
-                                console.error(_0x1957e4),
-                                clearTimeout(_0x5d7e75),
-                                _0x3ccf8b(null)
-                            )
-                        )
+                        .catch((_0x1957e4) => (console.error(_0x1957e4), clearTimeout(_0x5d7e75), _0x3ccf8b(null)))
                     : _0x3ccf8b(null)
             }),
         _0x5e355f = '/test.js'
@@ -408,31 +459,21 @@ async function __getInfoFromWorker() {
     if (
         (_0x5f2770 != navigator.platform && __detectResults.Z.setValue('worker', '8'),
             _0x1c2589 != navigator.userAgent && __detectResults.Z.setValue('worker', '7'),
-            _0x5e6811 &&
-            _0x5e6811 != navigator.hardwareConcurrency &&
-            __detectResults.Z.setValue('worker', '6'),
-            _0x1eb411 &&
-            _0x1eb411 != navigator.deviceMemory &&
-            __detectResults.Z.setValue('worker', '5'),
+            _0x5e6811 && _0x5e6811 != navigator.hardwareConcurrency && __detectResults.Z.setValue('worker', '6'),
+            _0x1eb411 && _0x1eb411 != navigator.deviceMemory && __detectResults.Z.setValue('worker', '5'),
             _0x5a890a.lies.proto)
     ) {
         const { proto: _0x463704 } = _0x5a890a.lies
         Object.keys(_0x463704).forEach((_0x32be79) => {
-            _0x463704[_0x32be79].forEach((_0x1fdeb1) =>
-                __detectResults.Z.setValue('worker', _0x1fdeb1)
-            )
+            _0x463704[_0x32be79].forEach((_0x1fdeb1) => __detectResults.Z.setValue('worker', _0x1fdeb1))
         })
     }
     const [_0x50c7db, _0x25eb67] = (0, __engineInfo.__OSTypeTextFromUserAgentAndPlatform)(_0x1c2589, _0x5f2770)
     _0x50c7db != _0x25eb67 &&
         ((_0x5a890a.lied = true),
-            (_0x5a890a.lies.os =
-                _0x25eb67 +
-                ' platform and ' +
-                _0x50c7db +
-                '\x20user\x20agent\x20do\x20not\x20match'),
+            (_0x5a890a.lies.os = _0x25eb67 + ' platform and ' + _0x50c7db + '\x20user\x20agent\x20do\x20not\x20match'),
             __detectResults.Z.setValue('worker', '4'))
-    const _0x25cb19 = (0, __engineInfo.d$)(),
+    const _0x25cb19 = (0, __engineInfo.__navigatorHasSpecificProperty)(),
         _0x15c554 = (0, __engineInfo.__getBrowserType)({
             ua: _0x1c2589,
             os: _0x4d59ed,
@@ -460,21 +501,13 @@ async function __getInfoFromWorker() {
         _0x5bea34 != _0x3c25c4 &&
         ((_0x5a890a.lied = true),
             (_0x5a890a.lies.version =
-                'userAgentData version ' +
-                _0x5bea34 +
-                ' and user agent version ' +
-                _0x3c25c4 +
-                ' do not match'),
+                'userAgentData version ' + _0x5bea34 + ' and user agent version ' + _0x3c25c4 + ' do not match'),
             __detectResults.Z.setValue('worker', '2'))
     const _0x4b30cc = __engineInfo.__isV8 && CSS.supports('accent-color: initial'),
         _0x4511c9 = (_0x3ac380, _0x583a85) => {
-            if (
-                !/windows|mac/i.test(_0x3ac380) ||
-                !(null == _0x583a85 ? void 0 : _0x583a85.platformVersion)
-            )
+            if (!/windows|mac/i.test(_0x3ac380) || !(null == _0x583a85 ? void 0 : _0x583a85.platformVersion))
                 return false
-            if ('macOS' == _0x583a85.platform)
-                return !!_0x4b30cc && /_/.test(_0x583a85.platformVersion)
+            if ('macOS' == _0x583a85.platform) return !!_0x4b30cc && /_/.test(_0x583a85.platformVersion)
             const _0x320fdf = (/windows ([\d|\.]+)/i.exec(_0x3ac380) || [])[1],
                 _0x1f625f = 10 == +_0x320fdf,
                 { platformVersion: _0x555ecb } = _0x583a85,
