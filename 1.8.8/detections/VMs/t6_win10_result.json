@@ -1,0 +1,1175 @@
+{
+    "Navigator": [
+        {
+            "methodName": "vendorSub",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "productSub",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "vendor",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "maxTouchPoints",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "scheduling",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "userActivation",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "doNotTrack",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "geolocation",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "connection",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "plugins",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "mimeTypes",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "pdfViewerEnabled",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "webkitTemporaryStorage",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "webkitPersistentStorage",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "windowControlsOverlay",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "hardwareConcurrency",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "cookieEnabled",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "appCodeName",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "appName",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "appVersion",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "platform",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "product",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "userAgent",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "language",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "languages",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "onLine",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "webdriver",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "getGamepads",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function getGamepads() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "javaEnabled",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function javaEnabled() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "sendBeacon",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function sendBeacon() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "vibrate",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function vibrate() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "constructor",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function Navigator() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "deprecatedRunAdAuctionEnforcesKAnonymity",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "protectedAudience",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "bluetooth",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "storageBuckets",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "clipboard",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "credentials",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "keyboard",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "managed",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "mediaDevices",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "storage",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "serviceWorker",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "virtualKeyboard",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "wakeLock",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "deviceMemory",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "userAgentData",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "login",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "ink",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "mediaCapabilities",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "hid",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "locks",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "gpu",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "mediaSession",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "permissions",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "presentation",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "usb",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "xr",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "serial",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "adAuctionComponents",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function adAuctionComponents() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "runAdAuction",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function runAdAuction() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "canLoadAdAuctionFencedFrame",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function canLoadAdAuctionFencedFrame() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "canShare",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function canShare() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "share",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function share() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "clearAppBadge",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function clearAppBadge() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "getBattery",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function getBattery() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "getUserMedia",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function getUserMedia() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "requestMIDIAccess",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function requestMIDIAccess() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "requestMediaKeySystemAccess",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function requestMediaKeySystemAccess() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "setAppBadge",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function setAppBadge() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "webkitGetUserMedia",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function webkitGetUserMedia() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "clearOriginJoinedAdInterestGroups",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function clearOriginJoinedAdInterestGroups() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "createAuctionNonce",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function createAuctionNonce() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "joinAdInterestGroup",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function joinAdInterestGroup() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "leaveAdInterestGroup",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function leaveAdInterestGroup() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "updateAdInterestGroups",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function updateAdInterestGroups() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "deprecatedReplaceInURN",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function deprecatedReplaceInURN() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "deprecatedURNToURL",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function deprecatedURNToURL() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "getInstalledRelatedApps",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function getInstalledRelatedApps() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "getInterestGroupAdAuctionData",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function getInterestGroupAdAuctionData() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "registerProtocolHandler",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function registerProtocolHandler() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "unregisterProtocolHandler",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object Navigator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function unregisterProtocolHandler() { [native code] }",
+            "arguments": "()"
+        }
+    ],
+    "CSSPageRule": [
+        {
+            "methodName": "selectorText",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "style",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "constructor",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object CSSPageRule]",
+            "prototypeChain": [
+                "CSSGroupingRule",
+                "CSSRule",
+                "Object"
+            ],
+            "toString": "function CSSPageRule() { [native code] }",
+            "arguments": "()"
+        }
+    ],
+    "GamepadHapticActuator": [
+        {
+            "methodName": "effects",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "type",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "playEffect",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object GamepadHapticActuator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function playEffect() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "reset",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object GamepadHapticActuator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function reset() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "constructor",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object GamepadHapticActuator]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function GamepadHapticActuator() { [native code] }",
+            "arguments": "()"
+        }
+    ],
+    "HTMLAnchorElement": [
+        {
+            "methodName": "target",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "download",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "ping",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "rel",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "relList",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "hreflang",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "type",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "referrerPolicy",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "text",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "coords",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "charset",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "name",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "rev",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "shape",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "origin",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "protocol",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "username",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "password",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "host",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "hostname",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "port",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "pathname",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "search",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "hash",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "href",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "toString",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object HTMLAnchorElement]",
+            "prototypeChain": [
+                "HTMLElement",
+                "Element",
+                "Node",
+                "EventTarget",
+                "Object"
+            ],
+            "toString": "function toString() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "constructor",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object HTMLAnchorElement]",
+            "prototypeChain": [
+                "HTMLElement",
+                "Element",
+                "Node",
+                "EventTarget",
+                "Object"
+            ],
+            "toString": "function HTMLAnchorElement() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "hrefTranslate",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "attributionSrc",
+            "error": "Illegal invocation"
+        }
+    ],
+    "GPUAdapter": [
+        {
+            "methodName": "features",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "limits",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "info",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "isFallbackAdapter",
+            "error": "Illegal invocation"
+        },
+        {
+            "methodName": "requestDevice",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": true,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object GPUAdapter]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function requestDevice() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "constructor",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object GPUAdapter]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function GPUAdapter() { [native code] }",
+            "arguments": "()"
+        }
+    ],
+    "ArrayBuffer": [
+        {
+            "methodName": "constructor",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object ArrayBuffer]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function ArrayBuffer() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "byteLength",
+            "error": "Method get ArrayBuffer.prototype.byteLength called on incompatible receiver #<ArrayBuffer>"
+        },
+        {
+            "methodName": "slice",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object ArrayBuffer]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function slice() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "maxByteLength",
+            "error": "Method get ArrayBuffer.prototype.maxByteLength called on incompatible receiver #<ArrayBuffer>"
+        },
+        {
+            "methodName": "resizable",
+            "error": "Method get ArrayBuffer.prototype.resizable called on incompatible receiver #<ArrayBuffer>"
+        },
+        {
+            "methodName": "resize",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object ArrayBuffer]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function resize() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "transfer",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object ArrayBuffer]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function transfer() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "transferToFixedLength",
+            "type": "function",
+            "isFunction": true,
+            "enumerable": false,
+            "configurable": true,
+            "writable": true,
+            "hasGetter": false,
+            "hasSetter": false,
+            "symbols": [
+                null
+            ],
+            "protoToString": "[object ArrayBuffer]",
+            "prototypeChain": [
+                "Object"
+            ],
+            "toString": "function transferToFixedLength() { [native code] }",
+            "arguments": "()"
+        },
+        {
+            "methodName": "detached",
+            "error": "Method get ArrayBuffer.prototype.detached called on incompatible receiver #<ArrayBuffer>"
+        }
+    ]
+}
